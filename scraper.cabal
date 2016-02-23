@@ -1,0 +1,32 @@
+name:                scraper
+version:             0.1.0.0
+description:         Dataset processor for xdataset
+license:             AllRightsReserved
+author:              Alex Babkin
+maintainer:          ababkin@gmail.com
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable scraper
+  hs-source-dirs: src
+  main-is:        Main.hs
+  -- ghc-options:    -static -Wall -threaded -j -O2
+  ghc-options:    -Wall -threaded -O0 -static
+  buildable: True
+  build-depends:
+      base >= 4 && < 5
+    , text
+    , attoparsec
+    , mtl
+    , stm
+    , transformers
+    , aeson
+    , scotty
+    , bytestring
+    , containers
+    , wreq
+    , lens
+    , tagsoup
+    , vector
+    , cassava
+

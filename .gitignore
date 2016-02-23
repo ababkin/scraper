@@ -1,0 +1,9 @@
+dist/*
+dist/**/*
+.DS_Store
+xds-processor
+log/*
+config.json
+.cabal-sandbox/*
+cabal.sandbox.config
+setenv.sh
